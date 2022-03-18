@@ -15,7 +15,7 @@ class ViewController: UIViewController, UICollectionViewDataSource {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        data = generateDataStore(numberOfItem: 20)
+        data = generateDataStore(numberOfItem: 40)
         
         collectionView.dataSource = self
         collectionView.register(UINib(nibName: "DynamicCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: "DynamicCollectionViewCell")
@@ -25,7 +25,9 @@ class ViewController: UIViewController, UICollectionViewDataSource {
          - option 1: set layout esteimate size in code
          - option 2. set estimate size to automatic in storyboard of collectionView at size inspector section
          */
-        if let layout = collectionView.collectionViewLayout as? UICollectionViewFlowLayout {
+        if let layout = collectionView.collectionViewLayout as? AlignedCollectionViewFlowLayout {
+            //            layout.horizontalAlignment = .left
+            layout.horizontalAlignment = .left
             layout.estimatedItemSize = UICollectionViewFlowLayout.automaticSize
             layout.minimumLineSpacing = 8.0
             layout.minimumInteritemSpacing = 0
