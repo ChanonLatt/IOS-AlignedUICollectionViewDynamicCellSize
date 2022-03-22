@@ -1,0 +1,1 @@
+# IOS-AlignedUICollectionViewDynamicCellSize<img width="489" alt="Screen Shot 2022-03-23 at 12 15 12 AM" src="https://user-images.githubusercontent.com/68848964/159537812-bf1d819c-4479-4c2a-bfc5-6e48972c9fc2.png">
